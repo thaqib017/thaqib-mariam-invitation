@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100e13">
+<meta name="description" content="Jemputan Majlis Merisik dan Bertunang Thaqib & Mariam">
+<title>Thaqib & Mariam — Infinity Castle Invitation</title>
+<style>
+:root{--gold:#d8bd83;--cream:#f5ead4;--ink:#100e13;--wood:#39251f;--sage:#9cae91}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--ink);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow:hidden}
+button{font:inherit;cursor:pointer}.screen{position:fixed;inset:0;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#3b2426 0,#171218 45%,#08080c 100%)}
+.hidden{display:none!important}.grain:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E")}
+.castle{position:absolute;inset:-5%;perspective:900px;background:repeating-linear-gradient(90deg,transparent 0 11%,#130e11 11.2% 11.8%,transparent 12% 24%),linear-gradient(#130f14,#35201e 45%,#100d12)}
+.castle:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 12%,#130e11 12.3% 12.8%,transparent 13% 25%),linear-gradient(90deg,#0b0a0eaa,transparent 35%,transparent 65%,#0b0a0eaa)}
+.lantern{position:absolute;width:24px;height:42px;border-radius:7px;background:linear-gradient(90deg,#6e382c,#f2b96b,#7d342c);box-shadow:0 0 35px #ff9e4b88;top:15%;left:15%;animation:flicker 3s infinite alternate}.lantern.r{left:auto;right:15%;top:24%}
+@keyframes flicker{from{opacity:.65;filter:brightness(.8)}to{opacity:1;filter:brightness(1.35)}}
+.gate{position:absolute;inset:8% 12%;display:flex;perspective:1000px;filter:drop-shadow(0 20px 35px #000)}
+.door{width:50%;height:100%;border:5px solid #171013;background:repeating-linear-gradient(0deg,#321d1b 0 9%,#4a2924 9.5% 10.5%,#251619 11% 12%),linear-gradient(90deg,#1b1115,#60362c,#251518);box-shadow:inset 0 0 0 3px #92704a,inset 0 0 30px #000;transition:transform 1.8s cubic-bezier(.2,.75,.15,1);position:relative}
+.door:after{content:"";position:absolute;inset:7%;border:1px solid #a88759;opacity:.65;background:repeating-linear-gradient(90deg,transparent 0 30%,#100b0d66 31% 32%,transparent 33% 60%)}
+.door.left{transform-origin:left center}.door.right{transform-origin:right center}
+.open .door.left{transform:rotateY(-105deg)}.open .door.right{transform:rotateY(105deg)}
+.door-knob{position:absolute;top:48%;width:9px;height:9px;border-radius:50%;background:var(--gold);z-index:2}.left .door-knob{right:12px}.right .door-knob{left:12px}
+.front-copy{position:absolute;z-index:4;text-align:center;top:17%;left:5%;right:5%;text-shadow:0 2px 14px #000}
+.kicker{letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-size:clamp(.65rem,2vw,.9rem)}
+h1{font-size:clamp(2rem,7vw,4.7rem);font-weight:normal;letter-spacing:.05em;margin:.55em 0}.amp{color:var(--gold);font-style:italic}
+.sub{font-size:clamp(.8rem,2.5vw,1.05rem);letter-spacing:.12em;line-height:1.8}
+.action{position:absolute;z-index:8;bottom:8%;left:50%;transform:translateX(-50%);border:1px solid var(--gold);color:var(--cream);background:#120d11dd;padding:14px 24px;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;box-shadow:0 0 25px #0008}
+.action:hover{background:#493027}
+.hint{position:absolute;z-index:5;bottom:4%;font:11px Arial,sans-serif;letter-spacing:.18em;color:#cbbba0a8;text-transform:uppercase}
+#fall{background:radial-gradient(ellipse at center,#51332e 0,#171219 50%,#050508 100%)}
+.tunnel{position:absolute;inset:-30%;background:repeating-conic-gradient(from 0deg at 50% 50%,#2c1a1b 0deg 7deg,#0c0b10 7deg 15deg);transform:perspective(400px) rotateX(55deg) scale(1.2);animation:drop 1.4s linear infinite}
+@keyframes drop{from{transform:perspective(400px) rotateX(55deg) scale(1.2) translateY(-2%)}to{transform:perspective(400px) rotateX(55deg) scale(2.5) translateY(15%)}}
+.fall-card{position:relative;z-index:2;text-align:center;padding:28px;background:#120f13d9;border:1px solid #9a7a53;box-shadow:0 0 50px #0008;max-width:90vw;animation:float 2.5s ease-in-out infinite alternate}
+@keyframes float{to{transform:translateY(-10px) rotate(-.4deg)}}
+.big{font-size:clamp(1.7rem,6vw,3.4rem);color:var(--gold);margin:.4em 0}.small{letter-spacing:.1em;line-height:1.8}
+.room{position:absolute;inset:0;background:linear-gradient(90deg,#08080c 0,#34211f 20%,#5a3a2d 50%,#2b1b20 80%,#08080c 100%);perspective:700px}
+.room:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 14%,#130f12 14.4% 15%,transparent 15.5% 28%),repeating-linear-gradient(90deg,transparent 0 17%,#170f13 17.4% 18%,transparent 18.5% 35%);opacity:.8}
+.wall-text{position:relative;z-index:2;text-align:center;padding:28px 20px;border:1px solid #9a7a53;background:#100d12d9;box-shadow:0 0 35px #0008}
+#run{background:linear-gradient(#17121b 0 48%,#483027 49%,#171116 100%)}
+.courtyard{position:absolute;inset:0;background:linear-gradient(180deg,#130f18 0 35%,#50352b 36%,#1b1318 100%)}
+.courtyard:before{content:"";position:absolute;left:-20%;right:-20%;bottom:-15%;height:60%;background:repeating-linear-gradient(90deg,#291a1b 0 8%,#5b3a2b 8.3% 8.8%,#24171b 9% 18%);transform:perspective(350px) rotateX(58deg);transform-origin:bottom}
+.run-lines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 12%,#f2d3a022 12.5% 13%,transparent 13.5% 25%);animation:speed .18s linear infinite;opacity:0}
+.running .run-lines{opacity:1}
+@keyframes speed{to{transform:translateY(20%)}}
+.final-room{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,#604333 0,#251a20 48%,#09090d 100%);display:grid;place-items:center}
+.final-room:before{content:"";position:absolute;inset:5% 7%;border:3px solid #5a3c2c;outline:1px solid #ad8d5c;background:repeating-linear-gradient(90deg,transparent 0 15%,#120e12 15.2% 15.8%,transparent 16% 30%)}
+.couple{position:relative;z-index:2;display:flex;align-items:end;gap:clamp(18px,5vw,60px);margin-top:4vh}
+.person{width:clamp(95px,21vw,180px);text-align:center}
+.head{width:clamp(35px,7vw,58px);height:clamp(35px,7vw,58px);background:#d8b095;border-radius:50%;margin:0 auto -2px;position:relative;z-index:2;box-shadow:inset -6px -2px #9c6c5d}
+.body{height:clamp(105px,25vh,200px);border-radius:40% 40% 5px 5px;position:relative;box-shadow:inset -12px 0 #0002}
+.man .body{background:linear-gradient(90deg,#b97f79,#e6b2a5 45%,#ba8178);clip-path:polygon(18% 0,82% 0,100% 100%,0 100%)}
+.man .body:after{content:"";position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(90deg,#839078,#b7c5a4,#74856c);border-top:2px solid #d8c99c}
+.woman .head:before{content:"";position:absolute;inset:-5px -6px 7px;background:#d8d1bd;border-radius:50% 50% 25% 25%;z-index:-1}
+.woman .body{height:clamp(120px,28vh,220px);background:linear-gradient(90deg,#60765f,#b0c1a0 48%,#71886b);clip-path:polygon(28% 0,72% 0,100% 100%,0 100%)}
+.seat{position:absolute;z-index:1;bottom:7%;width:68%;height:20%;background:linear-gradient(#6b3c2c,#2b1718);border:3px solid #9a754c;box-shadow:0 12px 25px #0009}
+.final-copy{position:absolute;z-index:4;top:7%;text-align:center;left:5%;right:5%;text-shadow:0 2px 15px #000}
+.final-copy h2{font-size:clamp(1.5rem,5vw,3rem);font-weight:normal;margin:.25em}
+.final-actions{position:absolute;z-index:6;bottom:3%;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;width:100%;padding:0 10px}
+.final-actions a,.final-actions button{border:1px solid var(--gold);background:#100d12e8;color:var(--cream);padding:10px 14px;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:.08em}
+#sound{position:fixed;top:12px;right:12px;z-index:20;border:1px solid #92764d;background:#100d12cc;color:#f5ead4;padding:8px 10px;font:12px Arial}
+@media(max-height:600px){.gate{inset:5% 18%}.front-copy{top:8%}.action{bottom:5%}.hint{display:none}.final-copy{top:2%}.final-room:before{inset:2% 7%}.final-actions{bottom:1%}}
+</style>
+</head>
+<body>
+<button id="sound" aria-label="Toggle sound">SOUND: OFF</button>
+
+<section class="screen grain" id="home">
+  <div class="castle"><i class="lantern"></i><i class="lantern r"></i></div>
+  <div class="front-copy">
+    <div class="kicker">A journey into forever</div>
+    <h1>THAQIB <span class="amp">&</span> MARIAM</h1>
+    <div class="sub">MAJLIS MERISIK DAN BERTUNANG</div>
+  </div>
+  <div class="gate" id="gate"><div class="door left"><span class="door-knob"></span></div><div class="door right"><span class="door-knob"></span></div></div>
+  <button class="action" id="openBtn">Buka Jemputan ✦</button>
+  <div class="hint">Tap to enter the castle</div>
+</section>
+
+<section class="screen grain hidden" id="fall">
+  <div class="tunnel"></div>
+  <div class="fall-card">
+    <div class="kicker">The date is written in the castle</div>
+    <div class="big">1 NOVEMBER 2026</div>
+    <div class="small">(21 Jamadilawal 1448 AH)</div>
+  </div>
+</section>
+
+<section class="screen grain hidden" id="time">
+  <div class="room"></div>
+  <div class="wall-text">
+    <div class="kicker">The appointed hour</div>
+    <div class="big">2.00 PM</div>
+    <div class="small">ALOR GAJAH, MELAKA</div>
+  </div>
+</section>
+
+<section class="screen grain hidden" id="run">
+  <div class="courtyard"></div><div class="run-lines"></div>
+  <div class="wall-text" style="position:absolute;top:12%;left:8%;right:8%">
+    <div class="kicker">Follow the lanterns</div>
+    <div class="small">The final door awaits...</div>
+  </div>
+</section>
+
+<section class="screen grain hidden" id="ending">
+  <div class="final-room">
+    <div class="seat"></div>
+    <div class="final-copy">
+      <div class="kicker">You are invited</div>
+      <h2>THAQIB <span class="amp">&</span> MARIAM</h2>
+      <div class="small">MAJLIS MERISIK DAN BERTUNANG</div>
+    </div>
+    <div class="couple">
+      <div class="person man"><div class="head"></div><div class="body"></div></div>
+      <div class="person woman"><div class="head"></div><div class="body"></div></div>
+    </div>
+  </div>
+  <div class="final-actions">
+    <a id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Alor+Gajah%2C+Melaka" target="_blank" rel="noopener">BUKA GOOGLE MAPS ↗</a>
+    <button id="rsvpBtn">RSVP WHATSAPP</button>
+    <button id="replayBtn">TONTON SEMULA ↻</button>
+  </div>
+</section>
+<script>
+const ids=['home','fall','time','run','ending'];
+const $=id=>document.getElementById(id);
+let timers=[], soundOn=false, audioCtx=null;
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+function show(id){ids.forEach(x=>$(x).classList.toggle('hidden',x!==id))}
+function later(fn,ms){timers.push(setTimeout(fn,ms))}
+function playSequence(){
+ clearTimers(); $('gate').classList.remove('open'); $('run').classList.remove('running');
+ show('home');
+ $('gate').classList.add('open');
+ later(()=>{show('fall');tone(180,.13);},850);
+ later(()=>{show('time');tone(260,.16);},3700);
+ later(()=>{show('run');$('run').classList.add('running');tone(320,.12);},6500);
+ later(()=>{show('ending');tone(440,.25);},9000);
+}
+function tone(freq,dur){
+ if(!soundOn)return;
+ try{audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=freq;g.gain.value=.035;o.connect(g);g.connect(audioCtx.destination);o.start();g.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+dur);o.stop(audioCtx.currentTime+dur)}catch(e){}
+}
+$('openBtn').addEventListener('click',playSequence);
+$('sound').addEventListener('click',()=>{soundOn=!soundOn;$('sound').textContent='SOUND: '+(soundOn?'ON':'OFF');if(soundOn)tone(440,.1)});
+$('replayBtn').addEventListener('click',playSequence);
+$('rsvpBtn').addEventListener('click',()=>{
+ const phone=prompt('Masukkan nombor WhatsApp tuan rumah dengan kod negara, contoh 60123456789. Biarkan kosong untuk salin mesej RSVP.');
+ const msg=encodeURIComponent('Assalamualaikum, saya ingin RSVP untuk Majlis Merisik dan Bertunang Thaqib & Mariam pada 1 November 2026, jam 2.00 PM di Alor Gajah, Melaka.');
+ if(phone && /^\d{8,15}$/.test(phone)) window.open('https://wa.me/'+phone+'?text='+msg,'_blank','noopener');
+ else if(!phone) {navigator.clipboard?.writeText('Assalamualaikum, saya ingin RSVP untuk Majlis Merisik dan Bertunang Thaqib & Mariam pada 1 November 2026, jam 2.00 PM di Alor Gajah, Melaka.');alert('Mesej RSVP disalin jika clipboard dibenarkan.');}
+});
+</script>
+</body>
+</html>
